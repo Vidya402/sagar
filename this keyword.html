@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this keyword</title>
+</head>
+<body>
+    
+<script>
+        // Alone this refers to global object.
+        // In a method this refers to owner object.
+        // In a function this refers to global object.
+        // In a function, in strict mode, this is undefined.
+        // In an event this refers to element that receives the event.
+
+
+    'use strict'
+
+        var a = 10;
+        console.log(a);
+
+      
+    console.log(this);
+
+    var car = {
+        color:"Red",
+        engine: function(){
+            console.log(this.color);
+        }
+    }
+
+    car.engine();
+
+
+    function thisfunction(){
+        'use strict'
+        console.log(this);
+    }
+    thisfunction();
+
+    
+    // var add = function(){
+    //     console.log("hello")
+    //     console.log(this)
+    // };
+    // add();
+
+</script>
+
+</body>
+</html>

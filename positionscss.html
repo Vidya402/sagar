@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>positions in  css</title>
+		<style>
+			body{
+			height:1440px;
+			}
+			.parentdiv{
+					border:1px solid green;
+					height:100px;
+					background-color:orange;
+					padding:20px;
+					position:relative;
+			}
+			.div1{
+				height:100px;
+				width:100px;
+				background-color:#40ff00;
+				position:absolute;
+				right:0px;
+				bottom:0px;	
+			}
+			
+			.fixeddiv{
+					height:100px;
+					width:100px;
+					background-color:#0080ff;
+					position:fixed;
+					left:300px;
+			}
+			
+			.stickydiv{
+				height:100px;
+				width:100px;
+				position:sticky;
+				background-color:#ff00bf;
+				top:100px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<!--
+			positions in css
+				- static
+				- Relative
+				- Absolute
+				- fixed
+				- sticky
+				
+			top/bottom/left/right/z-index
+				
+		-->
+		<div class="parentdiv">
+			<div class="div1"></div>
+			<div class="fixeddiv">position fixed</div>
+		</div>
+		<div class="stickydiv">sticky</div>
+		
+	</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in Javascript</title>
+</head>
+<body onload="changecolor()">
+    <!-- what is Events?
+    Javascript interactions with hTML is handled throught events that occurs when the user or the 
+    browser  manipulates a page. 
+        type of events
+            - Mouse events
+                - mousedown
+                - mouseup
+                - mouseover
+                - mouseout
+                - mousemove
+            - Keyboard events
+            - form events
+            - page events
+-->
+
+    <h2 id="eventhead">Events in Javascript</h2>
+    <button onclick="changecolor()">click me to change color</button>
+    <button onclick="changehead()">click me to change headcolor</button>
+    <button ondblclick="changehead()">doubleclick here</button>
+    <button onmousedown="changehead()">mousedown here</button>
+    <button onmousemove="changehead()">mouse touch</button>
+
+    on change:<select onchange="onchangefunc(this.value)">
+        <option>Choose items</option>
+        <option>Apple</option>
+        <option>Banana</option>
+        <option>grapes</option>
+        <option>Orange</option>
+    </select>
+
+    KEypress:<input type="text" onkeypress="keypressfunc(this.value)" />
+    focus:<input type="text" onfocus="onfocusfunc()" />
+
+    <script>
+        
+        function onfocusfunc(){
+            console.log("we are focused");
+        }
+
+
+        function keypressfunc(input){
+            alert(input);
+        }
+
+
+
+        function changecolor(){
+            document.body.style.backgroundColor = "orange";
+        }
+
+        function onchangefunc(value){
+            alert(value);
+        }
+
+
+        function changehead(){
+            document.getElementById("eventhead").style.backgroundColor = "lightgreen";
+        }
+
+    //     document.getElementById('eventhead').addEventListener('click',function(){
+    //         document.getElementById("eventhead").style.backgroundColor = "lightgreen";
+    // })
+
+    </script>
+
+</body>
+</html>

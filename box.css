@@ -1,0 +1,39 @@
+.image1{
+    display:flex;
+    background-color: none;
+    margin: 10px;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-self: center;
+    
+}
+.image{
+    width: 150px;
+    height:60px;
+    color:black;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid lightslategray;
+    border-radius: 20px;
+    align-items: center;
+    
+
+
+}
+.image{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:white;
+}
+.image :hover{
+    color: blue;
+    background-color: pink;
+}
+[class ^= "fa"]{
+    color: #ec1693;
+}
+.image:hover{
+    box-shadow:0px 1px 6px 0px red;
+
+}
+

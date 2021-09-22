@@ -1,0 +1,16 @@
+h2{
+  padding-top: 20px;
+  padding-right:40px;
+  padding-bottom: 0px;
+  padding-left: 100px;
+  height: auto;
+  width:300px;
+}
+img[alt]{
+    margin:40px,300px,40px,100px;
+    padding-left: 20px;
+}
+ul{
+    padding-top: 30px;
+    padding-left: 3px;
+}

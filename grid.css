@@ -1,0 +1,18 @@
+h1{
+    background-color: yellow;
+    padding: 30px;
+}
+.dev{
+    display: grid;
+    background-color:white;
+    grid-template-columns: 820px 200px 200px;
+    grid-template-rows: 300px 80px ;
+    grid-gap: 20px;
+    
+}
+.grid{
+    border: 1px solid blue;
+    padding: 30px;
+    background-color: yellow;
+    
+}

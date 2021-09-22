@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /*
+            ways to store data
+                - Strings - sequence of characters.
+                - Arrays - continous allocation of memory of its same type are different type
+                - Objects - continous allocation of memory for data in key, value pair
+                - Array of objects  - combination of array and object.
+        */
+
+        // Example for string
+            let courseName = 'ReactJs';
+            console.log(courseName);
+        
+        // Example for Array
+            let courses = ['Angular','reactjs','vuejs','MEAN',"MERN"];
+            console.log(courses[4]);
+        
+         // Example for object
+            let courseDetails = {
+                    name : 'ui development',
+                    Duration : '3 months',
+                    mode : 'online/offline'
+            }
+            console.log(courseDetails.Duration)
+        
+            // Example for array of object
+
+                let completeCourse = [
+                    {
+                        name : 'React development',
+                        Duration : '3 months',
+                        mode : 'online/offline' 
+                    },
+                    {
+                        name : 'angular development',
+                        Duration : '3 months',
+                        mode : 'online/offline' 
+                    },
+                    {
+                        name : 'MEAN development',
+                        Duration : '3 months',
+                        mode : 'online/offline' 
+                    },{
+                        name : 'MERN development',
+                        Duration : '3 months',
+                        mode : 'online/offline' 
+                    },
+
+                ]
+
+                console.log(completeCourse[2].name);
+        
+    </script>
+</body>
+</html>

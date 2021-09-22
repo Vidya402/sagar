@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html> 
+	<head>
+		<title>CSS Pseudo Selectors</title>
+		<style>
+		 	.orderlist li:first-child{
+				color:red;
+				font-size:20px;
+			}
+			
+			ol li:last-child{
+				color:orange;
+				font-size:20px;
+			}
+			
+			ol li:nth-child(2){
+				color:gold;
+				border:1px solid yellow;
+			}
+			
+			li:nth-child(3){
+				color:gold;
+				background-color:blue;
+			}
+			
+			li:nth-child(2n){
+				background-color:brown;
+			}
+			
+			li:nth-child(2n+1){
+				background-color:grey;
+			}
+			a{
+				font-size:20px;
+			}
+			
+			a:link{
+				color:blue;
+			}
+			
+			a:active{
+				color:yellow;
+			}
+			
+			a:visited{
+				color:green;
+			}
+			
+			a:hover{
+				background-color:violet;
+			}	
+	
+			ol li:hover{
+				background-color:green;
+				height:100px;
+			}
+		
+			p::first-line{
+				color:blue;
+			}
+			
+			p::first-letter{
+				color:gold;
+				font-size:40px;
+			}
+			
+			p::selection{
+				color:gold;
+				background-color:green;
+			}
+			
+			p:before{
+				height:100px;
+				width:100px;
+				display:block;
+				background-color:yellow;
+			}
+			p:after{
+				content:"*******";
+			}
+			
+		</style>
+	</head>
+	<body>
+		<!--
+			pseudo selector 
+				pseudo selector allows developer to style as per "their state" inside DOM.
+				
+				pseudo selectectors is classifed into two types 
+					- pseudo class selector(selector : state of an element)
+							:first-child
+							:last-child
+							:nth-child(index)
+							:nth-child(2n/even)
+							:nth-child(2n+1/odd)
+							:before
+							:after
+							
+					- anchor
+						a:link,a:active,a:hover,a:focus,a:visited
+						
+					- pseudo element selector(selector :: state of element)
+						::first-line
+						::first-letter
+						::selection
+					
+				
+		-->	
+		
+		<ol class="orderlist">
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>Javascript</li>
+			<li>BOotstrap</li>
+			<li>jquery</li>
+			<li>Reactjs</li>
+		</ol>
+		<a href="https://www.achieversit.com/" target="_blank">click here</a>
+		
+		<h2>what is pseudo Selectors</h2>
+		<p>pseudo selector allows developer to style as per "their state" inside DOM.The Taj Mahal is a mausoleum complex in Agra, 
+		western Uttar Pradesh state, northern India. It is considered the finest example of Mughal architecture
+		(a blend of Indian, Persian, and Islamic styles). 
+		The Taj Mahal is also one of the world's most iconic monuments, 
+		visited by millions of tourists each year.</p>
+	</body>
+<html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling and event capturing</title>
+    <style>
+        div{
+            border:2px solid darkviolet;
+            margin:10px;
+            padding:40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="grandparent">
+        <h2>grand parent div</h2>
+
+        <div id="parent">
+            <h2>parent div</h2>
+
+                <div id="child">
+                    <h2>child div</h2>
+                </div>
+        </div>
+    </div>
+</body>
+
+<script>
+        document.getElementById('grandparent').addEventListener('click',function(){
+            console.log('grandparent');
+        },false) 
+
+        document.getElementById('parent').addEventListener('click',function(e){
+            console.log('parent');
+            e.stopPropagation();
+        },false)
+
+        document.getElementById('child').addEventListener('click',function(){
+            console.log('child');
+        },false)
+</script>
+</html>

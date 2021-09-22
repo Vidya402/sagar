@@ -1,0 +1,14 @@
+h1{
+    background-color: lightblue;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 20px 500px 20px 500px;
+}
+.head1, .user {
+    color: sandybrown;
+    padding: 1px 100px;
+}
+ul {
+    color: blue;
+    padding: 10px 200px 30px 300px;
+}

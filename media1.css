@@ -1,0 +1,19 @@
+.parentdiv{
+    width: 50%;
+    height: auto;
+    margin: 10px;
+
+}
+.childdiv{
+    width: 90%;
+ background-color: green;
+}
+
+
+@media  screen and (min-width:340px)  {
+    .childdiv{
+        width: 100%;   
+    }
+   
+}
+

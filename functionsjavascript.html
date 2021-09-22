@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in javascript</title>
+</head>
+<body>
+    
+    <!-- Function - it is a group of statements that performs a specfic tasks.
+    advantages 
+        - code reusability
+        - less coding
+        - easy to maintain
+        - easy to eliminate the errors -->
+
+        <!-- multiple ways to create the Functions
+            - function without parameters
+            - function with parameters
+            - function with default parameters
+            - function with return statements
+            - variable function
+            - Named function
+            - Anonomous function
+            - Nested function
+            - callback function
+            - selfinvoking function/(IIFA- immediate invoking function anotation)
+            - Recursive function
+        
+        -->
+
+
+            <script>
+                // how to create a function
+
+                // function declaration/statement
+                function Welcome(name){
+                    document.write('<h1>Welcome to '+name+' training </h1>');
+                }
+
+                // call a function
+                Welcome("AchieversIT");
+                Welcome("ReactJs");
+                Welcome("MEAN STACK");
+
+
+
+                function covidcases(stateName,cases){
+                    switch(stateName){
+                        case 'kA': document.write("<h1>Total no of cases in karnataka "+cases+"</h1> ");
+                        break;
+                        case 'AP': document.write("<h1>Total no of cases in Andra Pradesh "+cases+"</h1>");
+                        break;
+                        case 'UP': document.write("<h1>Total no of cases in Utter pradesh "+cases+"</h1>");
+                        break;
+                        case 'TN': document.write("<h1>Total no of cases in Tamil Nadu "+cases+"</h1>");
+                        break;
+                        case 'KL': document.write("<h1>Total no of cases in Kerala "+cases+"</h1>");
+                        break;
+                        default:document.write("<h1>Total no of cases in India "+cases+"</h1>");
+                        break;
+                    }
+                }
+
+                covidcases('KA',124512);
+                covidcases('AP',121782);
+                covidcases('UP',124112);
+                covidcases('TN',121522);
+                covidcases('BR',121522124);
+
+            // - function with default parameters
+            // - function with return statements
+        
+                function gstCaluclation(amount,gstpercentage=15){
+
+                    return amount+(amount*gstpercentage/100);
+                }
+
+                console.log(gstCaluclation(1000,20));
+                console.log(gstCaluclation(1000,30));
+                console.log(gstCaluclation(1000));
+
+                // function expression
+                var add = function(){
+                    return 2+3;
+                };
+
+                console.log(add());
+
+                // annanomous function
+                (function(){
+                    console.log("This is an ananamous function");
+                }());
+
+            </script>
+</body>
+</html>

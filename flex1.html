@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>creating layout using css flexbox</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			[src]{
+				width:200px;
+				height:200px;
+			}
+			
+			.parentdiv{
+				display:flex;
+				flex-direction:row;
+				border:1px solid red;
+				height:500px;
+				justify-content:center;
+				align-items:center;
+				flex-wrap:wrap;
+				
+				
+			}
+			.divchild{
+				width:200px;
+				height:200px;
+				margin:20px;
+			}
+			
+			.div1{
+				background-color:green;
+				
+			}
+			.div2{
+				background-color:blue;
+				align-self:center;
+			}
+			
+			.div3{
+				background-color:yellow;
+				align-self:flex-end;
+				
+			}
+			
+			.div4{
+				background-color:gold;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 
+			flexbox
+				container properties
+					- flex direction
+						- row/row-reverse/column/column-reverse	
+					- justify content
+						flex-start/center/flex-end
+					- align-items
+						flex-start/center/flex-end
+					-flex-wrap
+						wrap/no-wrap/wrap-reverse
+						
+			flex child properties
+					- order
+					- flex-grow
+					- flex-shrink
+					- flex
+					- flex-basis
+					- align-self
+		-->
+		
+		<div class="parentdiv">
+			<div class="divchild div1"><h2>div1</h2>
+				<i class="fa fa-car" style="font-size:55px; color:gold"></i>
+			</div>
+			<div class="divchild div2"><h2>div2</h2></div>
+			<div class="divchild div3"><h2>div3</h2></div>
+			<div class="divchild div4"><h2>div4</h2></div>
+			
+			
+		</div>
+		
+	</body>
+</html>

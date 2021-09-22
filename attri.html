@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>selectors</title>
+        <style>
+            [alt]{
+                height: 200px;
+                width: 200px;
+            }
+            img[alt]{
+                border: 2px solid black;
+                margin: 5px;
+            }
+            [href="selectors.html"]{
+                font-size: 30px;
+                text-decoration: none;
+            }
+            [class ^= "attr"]{
+                color: blue;
+                background-color: lightgray;
+                font-size: 20px;
+            }
+            [id $= "ent"]{
+                border: 10px solid blue;
+                margin-top: 20px;
+                padding: 5px;  
+                color: red;
+                               
+            }
+            [id *= "ten"]{
+                background-color:lightgreen ;
+            }
+            a:link {
+                color:green;
+            }
+            a:visited {
+                color: hotpink;
+            }
+            a:active {
+                color:orange;
+            }
+            a:hover {
+                color: orchid;
+            }
+            a:focus{
+                color: white;
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- attribute selectors
+            attribute name [attribute name ]
+            attribute value equal to [href="selectors.html"]
+            attribute value start with [class ^= "attr"]
+            attribute value end with [id $= "ent"]
+            attribute value prasent inside the value [ id *= "ten"]
+        -->
+        <div>
+            <img src="..\images.jpg" alt="images"><br>
+        </div>
+            <input type="text" >
+            <a href="selectors.html">attribute equal to</a>
+            <section class="attributes-selectors"> Achievers IT React JS Certification Course in Bangalore.<br> We teach you detailed explanations of what is React Js, why we use React</section>
+            <footer id="footer-content">React components and React Hooks, React Router and we use state management library Redux</footer>
+    </body>
+</html>

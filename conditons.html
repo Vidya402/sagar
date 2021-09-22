@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions</title>
+</head>
+<body>
+    
+
+    <script>
+        /*
+            condition - conditional statement are used to perform different
+                         actions based on different conditions.
+            1) if statement  - this statement executes some code only if a
+                         specefic condition is true.
+                syntax
+                    if(condition)
+                    {
+                        code to be executed
+                    }
+            2) if else
+                    use this statement to some code if the conditioin is true, and another code 
+                    if the condition is false.
+                syntax:
+                    if(condition){
+                        this code executes if the conditon is true.
+                    }else{
+                        this code executes if the conditon is false.
+                    }
+            3) if else if
+                    syntax:
+                    if(condition 1){
+                        statement(s)
+                    }else if(condition 2){
+                        statement(s)
+                    }else if(condition 3){
+                        statement(s)
+                    }
+            4) switch condition
+                switch(option){
+                    case 1 :statement(s);
+                            break;
+                    case 2 :statement(s);
+                            break;
+                    case 3 :statement(s);
+                            break;
+                    case 4 :statement(s);
+                            break;
+                    case 5 :statement(s);
+                            break;
+                    default:statements(s);
+                            break;
+                }
+         */
+
+        // -------------------------if condition-------------------------
+
+       let Phone_name = "nokia";
+       
+         if(Phone_name=="nokia")
+                {
+                    // alert('the phone is nokia');
+                }
+        // -------------------------if else-------------------------
+        let no_Of_subjects_passed = 7;
+
+        if(no_Of_subjects_passed > 5){
+                // alert("eligible to promote to next standard");
+        }else {
+            // alert("not eligible to promote to next standard");
+        }
+
+         // -------------------------else if-------------------------
+
+        let principleVehicle = "bicycle";
+
+        if(principleVehicle == "car"){
+                        document.write("principle came in car")
+                    }
+                    else if(principleVehicle == "bike"){
+
+                        document.write("principle came in car")
+
+                    }else if(principleVehicle == "bicycle"){
+
+                        document.write("principle came in bicycle")
+                    }
+
+        
+    // -------------------------Switch-------------------------
+                    let today = new Date();
+
+                    console.log(today);
+
+                    let day = today.getUTCDay();
+
+                    console.log(day);
+
+                switch(day){
+                    case 0 :alert("today is sunday");
+                            break;
+                    case 1 :alert("today is monday");
+                            break;  
+                    case 2 :alert("today is tuesday");
+                            break;
+                    case 3 :alert("today is wednesday");
+                            break;   
+                    case 4 :alert("today is thursday");
+                            break; 
+                    case 5 :alert("today is friday");
+                            break;
+                    case 6 :alert("today is saturday");
+                            break;              
+                    default:alert("no day");
+                            break;
+                }
+
+    </script>   
+</body>
+</html>

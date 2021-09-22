@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic html</title>
+    <style>
+        section{
+            display: flex;
+            
+        }
+        section figure{
+            flex: 1;
+            width: 20%;
+        }
+        img{
+            width: 200px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <section>
+        <figure>
+            <img src="../images/laptopnew.jpg" alt="laptop-img" />
+            <figcaption>Laptop</figcaption>
+            <figcaption>30000</figcaption>
+            <figcaption>25000</figcaption>
+        </figure>
+        <figure>
+            <img src="../images/laptopnew.jpg" alt="laptop-img" />
+            <figcaption>Laptop</figcaption>
+            <figcaption>30000</figcaption>
+            <figcaption>25000</figcaption>
+        </figure>
+        <figure>
+            <img src="../images/laptopnew.jpg" alt="laptop-img" />
+            <figcaption>Laptop</figcaption>
+            <figcaption>30000</figcaption>
+            <figcaption>25000</figcaption>
+        </figure>
+        <figure>
+            <img src="../images/laptopnew.jpg" alt="laptop-img" />
+            <figcaption>Laptop</figcaption>
+            <figcaption>30000</figcaption>
+            <figcaption>25000</figcaption>
+        </figure>
+    </section> -->
+
+    <section id="approach1"></section>
+    <section id="approach2"></section>
+    
+    <script>
+        let products = [
+            {
+                name : 'Laptop',
+                imgName : 'laptopnew.jpg',
+                oldPrice : 30000,
+                newPrice : 25000
+            },
+            {
+                name : 'Laptop',
+                imgName : 'laptopnew.jpg',
+                oldPrice : 30000,
+                newPrice : 25000
+            },
+            {
+                name : 'Laptop',
+                imgName : 'laptopnew.jpg',
+                oldPrice : 30000,
+                newPrice : 25000
+            },
+            {
+                name : 'Laptop',
+                imgName : 'laptopnew.jpg',
+                oldPrice : 30000,
+                newPrice : 25000
+            },
+           
+        ]
+    </script>
+
+
+    <script src="dynamichtml.js"></script>
+</body>
+</html>
